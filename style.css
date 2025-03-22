@@ -1,0 +1,22 @@
+* {
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    
+}
+
+
+section {
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    flex-shrink: 0; 
+    flex-grow: 0;   
+    flex-basis: auto;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(0, 0, 0);
+}
