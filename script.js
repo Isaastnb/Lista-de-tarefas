@@ -22,6 +22,9 @@ function mostrarli(){
         </li>`
     }) 
     listaok.innerHTML = newTask
+
+    localStorage.setItem("list", JSON.stringify(lista))
+
     input.value = ""
 }
 button.addEventListener("click",  criarli);
@@ -34,3 +37,12 @@ function feito(posicao){
     lista[posicao].concluida = !lista[posicao].concluida
     mostrarli()
 }
+
+function recarregarTarefas(){
+    const tarefasDoLocalStorage = localStorage.getItem("list")
+    if(tarefasDoLocalStorage){
+        lista = JSON.parse(tarefasDoLocalStorage)
+        mostrarli()
+    }
+}
+recarregarTarefas()
