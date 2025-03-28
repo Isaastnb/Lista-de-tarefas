@@ -1,6 +1,10 @@
 * {
     font-family: Arial, sans-serif;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    
     
 }
  body{
@@ -10,52 +14,68 @@
     background-position: center;
 
 }
-
-
-#meu-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-section {
-    background-color:rgba(179, 174, 174, 0.644);
-    
-    padding: 20px;
-    border-radius: 8px;
+h1{
+    color: white;
     text-align: center;
-    margin-bottom: 20px;
+    margin: 30px 0;
+    font-size: 50px;
+}
+img{
+    height: 25px;
+    opacity: 0;
+}
+.container {
+    background-color: #574f4fc7;
     width: 500px;
-    min-height: 300px;
+    border-radius: 10px;
+    padding:20px;
+    margin: 100px auto 0;
 }
-h1 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: rgb(255, 255, 255);
+.input-task{
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 17px;
 }
-#add-task {
-    padding: 10px;
-    background-color: rgb(39, 39, 39, 0.95);
-    border-radius: 50px;
-    margin-top: 10px;
-    margin-left: 8px;
-    margin-right: 8px;
+.add-task{
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    background-color: #a5319f;
+    color: #ffffff;
+    font-size: 15px;
+    float:right;
+    padding: 0 15px;
+    cursor: pointer;
+    transition: 0.7s;
 }
-ul {
+.add-task:hover{
+    opacity: 0.8; 
+}
+.list-task{
+    width: 100%;
     list-style: none;
-    padding: 0;
-    gap: 10px;
+    margin-top: 30px;
 }
-
-li {
-    background-color: white;
-    border-radius: 8px;
-    padding: 5px;
-
+.task{
+    background-color: #ffffff;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex; 
+    height: 50px;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 0 15px;
 }
- #okbot{
-    margin: 0 70px;
- }
-
- #outbot{
-    margin: 0 70px;
- }
+.task:hover img{
+    opacity: 0.8; 
+    transition: opacity 0.5s ease-in-out;
+    cursor: pointer;
+}
+.done{
+    background-color: #7df844;
+    text-decoration: line-through;
+}
