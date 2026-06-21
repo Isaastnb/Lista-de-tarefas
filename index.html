@@ -1,28 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-do list</title>
+    <title>Gerenciador de Tarefas</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>To-do list</h1>
-
-    <div id="meu-container">
-    <section class=" container">
-        <div id="add-task">
-            <input type="text" id="task" placeholder="Adicione uma tarefa...">
-            <button id="add-btn" onclick="addTask()" >Adicionar</button>
-        </div>
-        <div id="Tarefas">
-
-        </div>
-        
-    </section>
+    <h1> Organize-se! </h1>
+    <p class="sub">Uma melhor gestão de sua rotina, gera uma melhor performace!</p>
+    <div class="container">
+        <input class="input-task" type="text" placeholder="Adicione uma tarefa">
+        <button class="add-task" onclick="clicar()">Adicionar</button>
+        <ul class="list-task">
+        </ul>
     </div>
+
 
 </body>
 <script src="script.js"></script>
+<footer> @Tnb</footer>
 </html>
